@@ -14,11 +14,14 @@ while True:
     linha = int(input('Quantas linhas terá sua matriz? '))
     print('Hmmm')
     sleep(0.5)
-    if linha % 2 == 1:
-        print('Impossível formação de matriz. Tente novamente')
-        print()
-    else:
+    if coluna % 2 == 1:
         break
+    else:
+        if linha % 2 == 1:
+            print('Impossível formação de matriz. Tente novamente')
+            print()
+        else:
+            break
 cont = 0
 teste = 0
 
